@@ -3,3 +3,5 @@ a.out
 
 # python
 .venv/
+.ipynb_checkpoints/
+.ipynb
