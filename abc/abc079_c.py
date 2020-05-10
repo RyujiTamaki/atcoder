@@ -2,7 +2,7 @@ import sys
 
 
 def dfs(i, s, val, formula):
-    if (i == len(s) - 1):
+    if i == len(s) - 1:
         if val == 7:
             print(formula + "=7")
             sys.exit()

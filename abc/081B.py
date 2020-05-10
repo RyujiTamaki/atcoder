@@ -1,4 +1,5 @@
 import math
+
 n = input()
 a = list(map(int, input().split()))
 ans = 10 ** 9

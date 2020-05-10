@@ -7,7 +7,7 @@ def cal(formula: str) -> int:
 
 
 def dfs(i: int, s: str, formula: str) -> int:
-    if (i == len(s) - 1):
+    if i == len(s) - 1:
         return cal(formula)
     return dfs(i + 1, s, formula + s[i + 1]) + dfs(i + 1, s, formula + "+" + s[i + 1])
 

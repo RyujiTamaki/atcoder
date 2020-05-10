@@ -4,6 +4,6 @@ p = list(map(int, input().split()))
 
 ans = 0
 
-for i in range(2**n):
+for i in range(2 ** n):
     for j in range(n):
         pass

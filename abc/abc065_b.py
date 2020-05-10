@@ -1,10 +1,10 @@
 N = int(input())
 a = [int(input()) - 1 for i in range(N)]
-c,s = 1, a[0]
+c, s = 1, a[0]
 
 while s != 2 and c < N:
     c = c + 1
-    s = a[s-1]
+    s = a[s - 1]
 
 now = 0
 c = 0
