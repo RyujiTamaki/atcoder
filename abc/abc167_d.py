@@ -1,31 +1,21 @@
-"""
 N, K = map(int, input().split())
 A = list(map(int, input().split()))
 
-A = [a - 1 for a in A]
+pos = 0
+visit = [0] * N
+move = []
+roop = []
 
-now = 0
-for i in range(K):
-    now = A[now]
+while visit[pos] != 2:
+    if visit[pos] == 0:
+        move.append(pos)
+    else:
+        roop.append(pos)
 
-print(now + 1)
-"""
+    visit[pos] += 1
+    pos = A[pos] - 1
 
-
-
-N, K = map(int, input().split())
-A = list(map(int, input().split()))
-
-A = [a - 1 for a in A]
-
-now = 0
-now_i
-passed = []
-for i in range(K):
-    now = A[now]
-    now_i = i
-    if now in passed:
-        break
-    passed.append(now)
-
-print(now + 1)
+if len(move) > K:
+    print(move[K] + 1)
+else:
+    print(roop[(K- (len(move) - len(roop))) % len(roop)] + 1)
