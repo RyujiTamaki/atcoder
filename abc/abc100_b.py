@@ -1,6 +1,6 @@
 def calc(x):
     ret = 0
-    while x % 100 ==0:
+    while x % 100 == 0:
         x /= 100
         ret += 1
     return ret
